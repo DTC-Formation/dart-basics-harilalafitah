@@ -2,8 +2,11 @@ import 'dart:math';
 
 void main() {
   print(puissance(2, 0));
+
   mots('y');
-  print(factorial(5));
+
+  var fact = factorial(5);
+  print('Le factoriel de 5 est: $fact.');
 }
 
 //factorial
