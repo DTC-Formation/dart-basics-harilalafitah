@@ -11,13 +11,17 @@ void main() {
 
 //factorial
 int factorial(int x) {
-  var ans = x;
-  x--;
-  while (x > 1) {
-    ans *= x;
+  if (x == 0)
+    return 1;
+  else {
+    var ans = x;
     x--;
+    while (x > 1) {
+      ans *= x;
+      x--;
+    }
+    return ans;
   }
-  return ans;
 }
 
 //puissance
